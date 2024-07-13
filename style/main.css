@@ -150,3 +150,26 @@ select {
 
     font-size: 10px;
 }
+
+.btn-end-game {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+
+    background: #d9b3ff;
+
+    font-size: 16px;
+
+    transition-duration: 0.2s;
+
+    cursor: pointer;
+}
+
+.btn-end-game:hover {
+    background-color: #c2a0e6;
+}
