@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Weave</title>
+
+        <link href="style/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="title">
+            <h1 class="name">Weave</h1>
+            <p class="instructions">Welcome to Weave! Select a board size to begin playing.</p>
+            <div class="start-buttons">
+                <button class="btn-start-4x4">4x4</button>
+                <button class="btn-start-5x5">5x5</button>
+                <button class="btn-start-6x6">6x6</button>
+            </div>
+        </div>
+
+        <div class="game" style="display: none;">
+            <p class="instructions">Make your board match the one on the right!</p>
+            <div class="boards">
+                <div class="game-board"></div>
+    
+                <div class="goal-board"></div>
+            </div>
+    
+            <div class="game-ui">
+                <div class="set-color">
+                    <p class="right-margin">Set</p>
+                    <select class="set-color-dir right-margin">
+                        <option value="r">Row</option>
+                        <option value="c">Column</option>
+                    </select>
+                    <select class="set-color-idx right-margin"></select>
+                    <p class="right-margin">to Color:</p>
+                    <select class="set-color-color right-margin"></select>
+                    <button class="btn-set-color">Activate</button>
+                </div>
+    
+                <button class="btn-reset-board">Reset Board</button>
+            </div>
+        </div>
+
+        <p class="version">v1.0.0</p>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
