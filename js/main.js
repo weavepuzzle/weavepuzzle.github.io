@@ -91,7 +91,6 @@ function startGame(size) {
             tiles[i].style.background = color;
         };
     };
-    setRandomColumnColor();
 
     document.querySelector('.btn-set-color').addEventListener('click', () => {
         let dir = document.querySelector('.set-color-dir').value;
