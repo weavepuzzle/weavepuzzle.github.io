@@ -133,8 +133,39 @@ function startGame(size) {
 
     document.querySelector('.title').style.display = 'none';
     document.querySelector('.game').style.display = 'block';
+    document.querySelector('.btn-end-game').style.display = 'block';
 };
 
 function getRandomNum(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+document.querySelector('.btn-end-game').addEventListener('click', () => {
+    endGame();
+});
+
+function endGame() {
+    document.querySelector('.game').style.display = 'none';
+    document.querySelector('.btn-end-game').style.display = 'none';
+    document.querySelector('.title').style.display = 'block';
+
+    const gameBoard = document.querySelector('.game-board');
+    while (gameBoard.firstChild) {
+        gameBoard.removeChild(gameBoard.lastChild);
+    };
+
+    const goalBoard = document.querySelector('.goal-board');
+    while (goalBoard.firstChild) {
+        goalBoard.removeChild(goalBoard.lastChild);
+    };
+
+    const setColorIdx = document.querySelector('.set-color-idx');
+    while (setColorIdx.firstChild) {
+        setColorIdx.removeChild(setColorIdx.lastChild);
+    };
+
+    const setColorColor = document.querySelector('.set-color-color');
+    while (setColorColor.firstChild) {
+        setColorColor.removeChild(setColorColor.lastChild);
+    };
 };
